@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Criar Conta</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user singinBx">
+                <div class="imgBx">
+                    <img src="assets/yoda-login.png" alt="image">
+                </div>
+                <div class="formBx">
+                    <form>
+                        <h2>Entrar</h2>
+                        <input type="text" name="" placeholder="Usuário">
+                        <input type="password" name="" placeholder="Senha">
+                        <input type="submit" name="" value="Login">
+                        <p class="signup">Não tem uma Conta?
+                            <a href="#" onclick="toggleForm()">Criar.</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="user singupBx">
+                <div class="formBx">
+                    <form>
+                        <h2>Criar uma Conta</h2>
+                        <input type="text" name="" placeholder="Usuário">
+                        <input type="email" name="" placeholder="Email">
+                        <input type="password" name="" placeholder="Senha">
+                        <input type="password" name="" placeholder="Confirmar Senha">
+                        <input type="submit" name="" value="Criar">
+                        <p class="signup">Já tem uma Conta?
+                            <a href="#" onclick="toggleForm()">Entrar.</a>
+                        </p>
+                    </form>
+                </div>
+                <div class="imgBx">
+                    <img src="assets/yoda-register.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function toggleForm() {
+            var container = document.querySelector('.container');
+            container.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
